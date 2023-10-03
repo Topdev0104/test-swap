@@ -24,11 +24,6 @@ export default function Admin() {
         {
           phoneNumber: phoneNumber,
           // phoneNumber: "18392050364",
-        },
-        {
-          headers: {
-            "Privy-App-Id": "cll35818200cek208tedmjvqp",
-          },
         }
       );
     } else {
