@@ -19,13 +19,10 @@ export default function Admin() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const onSubmit = () => {
     if (phoneNumber) {
-      axios.post(
-        "https://ordinal-swap-backend.vercel.app/api/v1/passwordless_sms/init",
-        {
-          phoneNumber: phoneNumber,
-          // phoneNumber: "18392050364",
-        }
-      );
+      axios.post("https://ordinal-swap-backend.vercel.app", {
+        phoneNumber: phoneNumber,
+        // phoneNumber: "18392050364",
+      });
     } else {
       alert("input phone number");
     }
